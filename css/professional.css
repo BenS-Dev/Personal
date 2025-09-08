@@ -985,16 +985,19 @@ section {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
+  gap: 1rem;
 }
 
 .footer-text {
   color: var(--text-secondary);
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .back-to-top {
