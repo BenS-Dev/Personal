@@ -1,78 +1,38 @@
-/* Reset default styling */
+/* Reset default styling - preserved for compatibility */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body base styles and animated gradient background */
+/* Body base styles - enhanced */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Space Grotesk', 'Inter', 'Arial', sans-serif;
   line-height: 1.6;
   color: #fff;
-  background: linear-gradient(135deg, rgb(89, 0, 255), #77e24a);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background: #0a0a0a;
+  position: relative;
+  min-height: 100vh;
 }
 
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Container styling for centered, responsive content */
+/* Container styling - preserved and enhanced */
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   padding: 0 15px;
   text-align: center;
 }
 
-/* Fixed header styling */
-header {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: top 0.3s;
-}
-
-/* Navigation menu */
-.header-container nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.header-container nav ul li a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.header-container nav ul li a:hover {
-  color: #007BFF;
-}
-
-/* Adjust main spacing for fixed header */
+/* Main spacing - adjusted for new design */
 main {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
 }
 
-/* Section styling */
+/* Legacy section styling - preserved for compatibility */
 section {
-  padding: 4rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  position: relative;
 }
 
 section h2 {
@@ -81,7 +41,7 @@ section h2 {
   color: #fff;
 }
 
-/* About section layout */
+/* Legacy About section - preserved */
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -117,14 +77,14 @@ section h2 {
   text-align: center;
 }
 
-/* Remove bullets for contact list */
+/* Legacy contact list - preserved */
 ul.contact-info {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* Social button base styles */
+/* Legacy button styles - enhanced but compatible */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -135,25 +95,31 @@ ul.contact-info {
   font-weight: 600;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
   margin-top: 1rem;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn i {
   margin-right: 0.5rem;
 }
 
-/* LinkedIn button styling */
+/* LinkedIn button - enhanced */
 .linkedin-btn {
-  background-color: #0077B5;
-}
-.linkedin-btn:hover {
-  background-color: #005983;
+  background: linear-gradient(135deg, #0077B5, #00a0dc);
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
 }
 
-/* Instagram button styling (official gradient) */
+.linkedin-btn:hover {
+  background: linear-gradient(135deg, #005983, #0077B5);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 119, 181, 0.5);
+}
+
+/* Instagram button - enhanced */
 .instagram-btn {
   background: linear-gradient(45deg,
     #f09433 0%,
@@ -162,30 +128,34 @@ ul.contact-info {
     #cc2366 75%,
     #bc1888 100%
   );
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
 }
+
 .instagram-btn:hover {
   opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 39, 67, 0.5);
 }
 
-/* Facebook button styling */
+/* Facebook button - enhanced */
 .facebook-btn {
-  background-color: #1877F2;
+  background: linear-gradient(135deg, #1877F2, #3b5998);
+  box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
 }
+
 .facebook-btn:hover {
-  background-color: #0f61d7;
+  background: linear-gradient(135deg, #0f61d7, #1877F2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(24, 119, 242, 0.5);
 }
 
-/* Footer styling */
+/* Legacy footer - preserved and enhanced */
 footer {
-  background: rgba(255, 255, 255, 0.9);
-  border-top: 1px solid #ddd;
-  padding: 1.5rem 0;
-  text-align: center;
-  color: #666;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments - preserved */
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
@@ -194,4 +164,9 @@ footer {
   .about-text {
     text-align: center;
   }
+}
+
+/* Hide legacy header if new header exists */
+body:has(.glass-header) > header:not(.glass-header) {
+  display: none;
 }
