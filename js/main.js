@@ -72,16 +72,20 @@ function initTypedText() {
         // Use Typed.js if available
         new Typed('#typed-output', {
             strings: [
-                'Finance & Accounting Student',
+                'Finance and Accounting Student',
                 'LLQP Licensed',
-                'Insurance Representative',
-                'UMMA Event Coordinator'
+                'Event Coordinator at UMMA'
             ],
-            typeSpeed: 50,
-            backSpeed: 30,
-            backDelay: 2000,
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 1500,
+            startDelay: 500,
             loop: true,
-            showCursor: false
+            showCursor: false,
+            smartBackspace: true,
+            fadeOut: false,
+            fadeOutClass: 'typed-fade-out',
+            fadeOutDelay: 500
         });
     } else {
         // Fallback: Just show the main title

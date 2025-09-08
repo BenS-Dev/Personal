@@ -253,25 +253,63 @@ header {
   padding: 8rem 2rem 4rem;
 }
 
+
+
+
+/* Increased spacing between hero content - but keep centered */
 .hero-content {
-  max-width: 1400px;
+  gap: 10rem;
+  max-width: 1500px;
+  padding: 0 3rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6rem;
   align-items: center;
-  padding: 0 2rem;
 }
 
+/* Subtle push to create more separation */
+.hero-visual {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3rem;
+  width: 100%;
+}
+
+/* Keep text aligned naturally - prevent expanding */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* FIX: Make subtitle container fixed height to prevent layout shift */
 .hero-subtitle {
+  height: 3rem;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
   font-size: clamp(1.1rem, 2.5vw, 1.6rem);
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
-  height: 2.5rem;
   font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Ensure typed text and cursor stay together */
+.typed-text {
+  display: inline-block;
 }
 
 .typed-cursor {
+  display: inline-block;
+  margin-left: 2px;
   animation: blink 1s infinite;
 }
 
@@ -1019,11 +1057,6 @@ section {
     justify-content: space-between;
   }
   
-  .hero-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 2rem;
-  }
   
   .about-grid {
     grid-template-columns: 1fr;
@@ -1062,5 +1095,57 @@ section {
   .profile-container {
     width: 250px;
     height: 250px;
+  }
+  
+  /* Mobile hero content override */
+  .hero-content {
+    gap: 2rem;
+    padding: 0 2rem;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .hero-visual,
+  .hero-text {
+    padding: 0;
+  }
+  
+  .hero-subtitle {
+    height: 3.5rem;
+    min-height: 3.5rem;
+  }
+}
+
+/* For larger screens, add a bit more separation */
+@media (min-width: 1200px) {
+  .hero-content {
+    gap: 12rem;
+    max-width: 1600px;
+    padding: 0 4rem;
+  }
+  
+  .hero-visual {
+    padding-left: 4rem;
+  }
+  
+  .hero-text {
+    padding-right: 4rem;
+  }
+}
+
+/* For extra-wide screens */
+@media (min-width: 1600px) {
+  .hero-content {
+    gap: 15rem;
+    max-width: 1800px;
+    padding: 0 5rem;
+  }
+  
+  .hero-visual {
+    padding-left: 5rem;
+  }
+  
+  .hero-text {
+    padding-right: 5rem;
   }
 }
