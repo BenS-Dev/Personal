@@ -5,12 +5,12 @@
   box-sizing: border-box;
 }
 
-/* Body base styles - enhanced */
+/* Body base styles - professional */
 body {
-  font-family: 'Space Grotesk', 'Inter', 'Arial', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.6;
-  color: #fff;
-  background: #0a0a0a;
+  color: #2C3E50;
+  background: #FAFAFA;
   position: relative;
   min-height: 100vh;
 }
@@ -38,7 +38,7 @@ section {
 section h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
-  color: #fff;
+  color: #0B4F3C;
 }
 
 /* Legacy About section - preserved */
@@ -67,13 +67,13 @@ section h2 {
 .about-text h1 {
   font-size: 2.5rem;
   margin-bottom: 0.25rem;
-  color: #fff;
+  color: #0B4F3C;
 }
 
 .about-text p {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: #ddd;
+  color: #6B6B6B;
   text-align: center;
 }
 
@@ -95,7 +95,7 @@ ul.contact-info {
   font-weight: 600;
   color: #fff;
   border: none;
-  border-radius: 50px;
+  border-radius: 6px;
   text-decoration: none;
   margin-top: 1rem;
   transition: all 0.3s ease;

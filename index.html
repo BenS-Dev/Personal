@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Ben Silver - University Manitoba Student | Digital Portfolio</title>
-  <meta name="description" content="Interactive portfolio of Ben Silver, University of Manitoba student specializing in Accounting & Finance. Experience the future of web design.">
-  <meta name="keywords" content="Ben Silver, portfolio, Winnipeg, Manitoba, University of Manitoba, accounting, finance, interactive design">
+  <title>Ben Silver - Finance & Accounting Student | LLQP Licensed | Winnipeg</title>
+  <meta name="description" content="Finance and Accounting student at University of Manitoba. LLQP licensed insurance representative with experience at WPG The Wealth Planning Group.">
+  <meta name="keywords" content="Ben Silver, LLQP, insurance, Manitoba, University of Manitoba, finance student, accounting, insurance representative">
   <meta name="author" content="Ben Silver">
   <meta name="robots" content="index, follow">
 
@@ -16,16 +16,16 @@
   <link rel="alternate" href="https://www.bensilver.ca/" hreflang="en-CA">
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Ben Silver - Digital Portfolio">
-  <meta property="og:description" content="Experience an immersive digital portfolio showcasing Ben Silver's journey in Accounting & Finance at University of Manitoba.">
+  <meta property="og:title" content="Ben Silver - Finance & Accounting Student | LLQP Licensed">
+  <meta property="og:description" content="Finance and Accounting student at University of Manitoba. LLQP licensed insurance representative with professional experience.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.bensilver.ca/">
   <meta property="og:image" content="https://www.bensilver.ca/images/Ben Silver.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ben Silver - Digital Portfolio">
-  <meta name="twitter:description" content="Experience an immersive digital portfolio showcasing Ben Silver's journey.">
+  <meta name="twitter:title" content="Ben Silver - Finance & Accounting Student | LLQP Licensed">
+  <meta name="twitter:description" content="Finance and Accounting student at University of Manitoba. LLQP licensed insurance representative.">
   <meta name="twitter:image" content="https://www.bensilver.ca/images/Ben Silver.jpg">
 
   <!-- Geotagging -->
@@ -40,7 +40,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Ben Silver",
-    "jobTitle": "University Manitoba Student",
+    "jobTitle": "Finance & Accounting Student | LLQP Licensed",
     "url": "https://www.bensilver.ca/",
     "image": "https://www.bensilver.ca/images/Ben Silver.jpg",
     "address": {
@@ -62,59 +62,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Google Fonts - Professional Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/professional.css">
   
-  <!-- External Libraries CDNs - Load async to prevent blocking -->
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script async src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Essential Libraries Only -->
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script async src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
 </head>
 
 <body>
-  <!-- Loading Screen -->
-  <div id="loading-screen">
-    <div class="loading-content">
-      <div class="loading-logo">
-        <div class="logo-text glitch" data-text="BS">BS</div>
-      </div>
-      <div class="loading-bar">
-        <div class="loading-progress"></div>
-      </div>
-      <div class="loading-text">Initializing Experience...</div>
-    </div>
-  </div>
-
-
-  <!-- Particle Background -->
-  <div id="particles-js"></div>
-  
-  <!-- 3D Background Canvas -->
-  <canvas id="three-canvas"></canvas>
-  
-  <!-- Aurora Background -->
-  <div class="aurora-container">
-    <div class="aurora aurora-1"></div>
-    <div class="aurora aurora-2"></div>
-    <div class="aurora aurora-3"></div>
-    <div class="aurora aurora-4"></div>
-  </div>
 
   <!-- Navigation Header -->
   <header id="header" class="glass-header">
     <div class="container header-container">
       <div class="logo">
-        <span class="logo-text glitch-hover" data-text="BS">BS</span>
+        <span class="logo-text">BS</span>
       </div>
       <nav class="main-nav">
         <ul>
@@ -154,7 +121,7 @@
       <div class="hero-content">
         <div class="hero-text">
           <h1 class="hero-title">
-            <span class="glitch-text" data-text="Ben Silver">Ben Silver</span>
+            <span>Ben Silver</span>
           </h1>
           <div class="hero-subtitle">
             <span class="typed-text" id="typed-output"></span>
@@ -165,24 +132,18 @@
             <span>Winnipeg, Manitoba</span>
           </div>
           <div class="hero-cta">
-            <a href="#about" class="btn-primary magnetic-btn" data-text="Explore My Journey">
-              <span>Explore My Journey</span>
-              <div class="btn-glow"></div>
+            <a href="#about" class="btn-primary">
+              <span>View My Portfolio</span>
             </a>
-            <a href="#contact" class="btn-secondary magnetic-btn" data-text="Get In Touch">
+            <a href="#contact" class="btn-secondary">
               <span>Get In Touch</span>
-              <div class="btn-glow"></div>
             </a>
           </div>
         </div>
         <div class="hero-visual">
           <div class="profile-container">
-            <div class="profile-ring ring-1"></div>
-            <div class="profile-ring ring-2"></div>
-            <div class="profile-ring ring-3"></div>
-            <div class="profile-image-wrapper tilt-card">
+            <div class="profile-image-wrapper">
               <img src="images/Ben Silver.jpg" alt="Ben Silver" class="profile-image">
-              <div class="profile-overlay"></div>
             </div>
           </div>
         </div>
@@ -199,57 +160,57 @@
     <section id="about" class="about-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title reveal-text">
+          <h2 class="section-title">
             <span>About</span>
             <span class="title-accent">Me</span>
           </h2>
           <div class="section-line"></div>
         </div>
-        <div class="about-content glass-card">
+        <div class="about-content">
           <div class="about-grid">
-            <div class="about-text reveal-fade">
-              <h3 class="gradient-text">University of Manitoba Student</h3>
-              <p class="lead">Passionate about the intersection of finance, accounting, and technology. Currently pursuing my degree while exploring innovative ways to merge traditional business principles with modern digital solutions.</p>
+            <div class="about-text">
+              <h3 class="gradient-text">Finance & Accounting Student</h3>
+              <p class="lead">University of Manitoba student pursuing Finance and Accounting studies. Licensed Life Insurance Advisor (LLQP) with experience at WPG The Wealth Planning Group. Event Coordinator for the University of Manitoba Marketing Association.</p>
               <div class="about-details">
                 <div class="detail-item">
                   <i class="fas fa-graduation-cap"></i>
                   <span>University of Manitoba</span>
                 </div>
                 <div class="detail-item">
-                  <i class="fas fa-chart-line"></i>
-                  <span>Accounting & Finance</span>
+                  <i class="fas fa-shield-alt"></i>
+                  <span>LLQP Licensed</span>
                 </div>
                 <div class="detail-item">
-                  <i class="fas fa-laptop-code"></i>
-                  <span>Tech Enthusiast</span>
+                  <i class="fas fa-briefcase"></i>
+                  <span>WPG The Wealth Planning Group</span>
                 </div>
               </div>
-              <div class="about-quote glass-card">
+              <div class="about-quote">
                 <i class="fas fa-quote-left"></i>
-                <p>"Bridging the gap between numbers and innovation, one project at a time."</p>
+                <p>"Committed to providing professional insurance services while building expertise in finance and accounting."</p>
               </div>
             </div>
-            <div class="about-visual reveal-scale">
-              <div class="stats-container">
-                <div class="stat-card glass tilt-card">
-                  <div class="stat-number" data-count="100">0</div>
-                  <div class="stat-label">Passion</div>
-                  <div class="stat-icon"><i class="fas fa-fire"></i></div>
+            <div class="about-visual">
+              <div class="credentials-container">
+                <div class="credential-card">
+                  <div class="credential-icon"><i class="fas fa-certificate"></i></div>
+                  <div class="credential-title">LLQP License</div>
+                  <div class="credential-desc">Licensed Insurance Representative</div>
                 </div>
-                <div class="stat-card glass tilt-card">
-                  <div class="stat-number" data-count="100">0</div>
-                  <div class="stat-label">Dedication</div>
-                  <div class="stat-icon"><i class="fas fa-rocket"></i></div>
+                <div class="credential-card">
+                  <div class="credential-icon"><i class="fas fa-chart-line"></i></div>
+                  <div class="credential-title">Years of Experience</div>
+                  <div class="credential-desc">3+ Years</div>
                 </div>
-                <div class="stat-card glass tilt-card">
-                  <div class="stat-number" data-count="100">0</div>
-                  <div class="stat-label">Innovation</div>
-                  <div class="stat-icon"><i class="fas fa-lightbulb"></i></div>
+                <div class="credential-card">
+                  <div class="credential-icon"><i class="fas fa-users"></i></div>
+                  <div class="credential-title">UMMA</div>
+                  <div class="credential-desc">Event Coordinator</div>
                 </div>
-                <div class="stat-card glass tilt-card">
-                  <div class="stat-number" data-count="100">0</div>
-                  <div class="stat-label">Growth</div>
-                  <div class="stat-icon"><i class="fas fa-chart-up"></i></div>
+                <div class="credential-card">
+                  <div class="credential-icon"><i class="fas fa-building"></i></div>
+                  <div class="credential-title">WPG The Wealth Planning Group</div>
+                  <div class="credential-desc">Insurance Experience</div>
                 </div>
               </div>
             </div>
@@ -262,7 +223,7 @@
     <section id="experience" class="experience-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title reveal-text">
+          <h2 class="section-title">
             <span>My</span>
             <span class="title-accent">Journey</span>
           </h2>
@@ -273,48 +234,48 @@
             <div class="timeline-progress"></div>
           </div>
           <div class="timeline-items">
-            <div class="timeline-item reveal-timeline">
+            <div class="timeline-item">
               <div class="timeline-dot">
                 <div class="dot-inner"></div>
               </div>
-              <div class="timeline-content glass-card tilt-card">
-                <div class="timeline-date">2025 - Present</div>
-                <h3>Digital Innovation</h3>
-                <p>Exploring the intersection of finance and technology through innovative digital solutions.</p>
+              <div class="timeline-content">
+                <div class="timeline-date">2022 - Present</div>
+                <h3>WPG The Wealth Planning Group</h3>
+                <p>Administrative Management, Insurance Sales Support, Client Service, and Technical Support. Developing expertise in insurance products and client relationship management.</p>
                 <div class="timeline-tags">
-                  <span class="tag">Innovation</span>
-                  <span class="tag">Technology</span>
-                  <span class="tag">Finance</span>
+                  <span class="tag">Insurance</span>
+                  <span class="tag">Client Service</span>
+                  <span class="tag">Administration</span>
                 </div>
               </div>
             </div>
-            <div class="timeline-item reveal-timeline">
+            <div class="timeline-item">
               <div class="timeline-dot">
                 <div class="dot-inner"></div>
               </div>
-              <div class="timeline-content glass-card tilt-card">
-                <div class="timeline-date">2024 - Present</div>
+              <div class="timeline-content">
+                <div class="timeline-date">2023 - Present</div>
+                <h3>UMMA Event Coordinator</h3>
+                <p>Event Planning, Team Coordination, and Budget Management for the University of Manitoba Marketing Association. Leading initiatives to engage students in marketing and business activities.</p>
+                <div class="timeline-tags">
+                  <span class="tag">Event Planning</span>
+                  <span class="tag">Leadership</span>
+                  <span class="tag">Budget Management</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">
+                <div class="dot-inner"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-date">2021 - Present</div>
                 <h3>University of Manitoba</h3>
-                <p>Pursuing comprehensive studies in Accounting and Finance, developing strong analytical and strategic thinking skills.</p>
+                <p>Pursuing Finance & Accounting Studies with focus on financial analysis, accounting principles, and business strategy. Developing strong analytical and quantitative skills.</p>
                 <div class="timeline-tags">
                   <span class="tag">Education</span>
                   <span class="tag">Accounting</span>
                   <span class="tag">Finance</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-item reveal-timeline">
-              <div class="timeline-dot">
-                <div class="dot-inner"></div>
-              </div>
-              <div class="timeline-content glass-card tilt-card">
-                <div class="timeline-date">Ongoing</div>
-                <h3>Professional Development</h3>
-                <p>Continuously learning and adapting to new technologies and methodologies in the evolving business landscape.</p>
-                <div class="timeline-tags">
-                  <span class="tag">Growth</span>
-                  <span class="tag">Learning</span>
-                  <span class="tag">Adaptation</span>
                 </div>
               </div>
             </div>
@@ -327,97 +288,70 @@
     <section id="skills" class="skills-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title reveal-text">
+          <h2 class="section-title">
             <span>Skills &</span>
             <span class="title-accent">Expertise</span>
           </h2>
           <div class="section-line"></div>
         </div>
         <div class="skills-grid">
-          <div class="skill-category reveal-fade">
+          <div class="skill-category">
+            <h3 class="category-title gradient-text">
+              <i class="fas fa-shield-alt"></i>
+              Insurance & Sales
+            </h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-certificate"></i></div>
+                <div class="skill-name">Life Insurance (LLQP)</div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-handshake"></i></div>
+                <div class="skill-name">Client Needs Assessment</div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-gavel"></i></div>
+                <div class="skill-name">Regulatory Compliance</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
             <h3 class="category-title gradient-text">
               <i class="fas fa-calculator"></i>
-              Finance & Accounting
+              Business & Academic
             </h3>
             <div class="skill-items">
-              <div class="skill-item glass tilt-card">
-                <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
                 <div class="skill-name">Financial Analysis</div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90"></div>
-                </div>
               </div>
-              <div class="skill-item glass tilt-card">
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                <div class="skill-name">QuickBooks</div>
+              </div>
+              <div class="skill-item">
                 <div class="skill-icon"><i class="fas fa-balance-scale"></i></div>
                 <div class="skill-name">Accounting Principles</div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85"></div>
-                </div>
-              </div>
-              <div class="skill-item glass tilt-card">
-                <div class="skill-icon"><i class="fas fa-coins"></i></div>
-                <div class="skill-name">Budget Management</div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="88"></div>
-                </div>
               </div>
             </div>
           </div>
-          <div class="skill-category reveal-fade">
+          <div class="skill-category">
             <h3 class="category-title gradient-text">
               <i class="fas fa-laptop-code"></i>
-              Technology
+              Technical & Administrative
             </h3>
             <div class="skill-items">
-              <div class="skill-item glass tilt-card">
+              <div class="skill-item">
                 <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
-                <div class="skill-name">Microsoft Office</div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="95"></div>
-                </div>
+                <div class="skill-name">Advanced Excel</div>
               </div>
-              <div class="skill-item glass tilt-card">
+              <div class="skill-item">
                 <div class="skill-icon"><i class="fas fa-database"></i></div>
-                <div class="skill-name">Data Analysis</div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="82"></div>
-                </div>
+                <div class="skill-name">Data Management</div>
               </div>
-              <div class="skill-item glass tilt-card">
-                <div class="skill-icon"><i class="fas fa-code"></i></div>
-                <div class="skill-name">Digital Innovation</div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="78"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="skill-category reveal-fade">
-            <h3 class="category-title gradient-text">
-              <i class="fas fa-users"></i>
-              Soft Skills
-            </h3>
-            <div class="skill-items">
-              <div class="skill-item glass tilt-card">
-                <div class="skill-icon"><i class="fas fa-comments"></i></div>
-                <div class="skill-name">Communication</div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="92"></div>
-                </div>
-              </div>
-              <div class="skill-item glass tilt-card">
-                <div class="skill-icon"><i class="fas fa-puzzle-piece"></i></div>
-                <div class="skill-name">Problem Solving</div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90"></div>
-                </div>
-              </div>
-              <div class="skill-item glass tilt-card">
-                <div class="skill-icon"><i class="fas fa-handshake"></i></div>
-                <div class="skill-name">Team Collaboration</div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="94"></div>
-                </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-cog"></i></div>
+                <div class="skill-name">Administrative Operations</div>
               </div>
             </div>
           </div>
@@ -429,32 +363,32 @@
     <section id="contact" class="contact-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title reveal-text">
+          <h2 class="section-title">
             <span>Let's</span>
             <span class="title-accent">Connect</span>
           </h2>
           <div class="section-line"></div>
         </div>
         <div class="contact-content">
-          <div class="contact-info reveal-fade">
+          <div class="contact-info">
             <h3 class="gradient-text">Get In Touch</h3>
             <p>I'm always interested in connecting with like-minded individuals and exploring new opportunities. Feel free to reach out!</p>
             <div class="contact-details">
-              <div class="contact-item glass">
+              <div class="contact-item">
                 <i class="fas fa-map-marker-alt"></i>
                 <div>
                   <h4>Location</h4>
                   <p>Winnipeg, Manitoba, Canada</p>
                 </div>
               </div>
-              <div class="contact-item glass">
+              <div class="contact-item">
                 <i class="fas fa-university"></i>
                 <div>
                   <h4>Education</h4>
                   <p>University of Manitoba</p>
                 </div>
               </div>
-              <div class="contact-item glass">
+              <div class="contact-item">
                 <i class="fas fa-clock"></i>
                 <div>
                   <h4>Availability</h4>
@@ -463,22 +397,22 @@
               </div>
             </div>
             <div class="social-links">
-              <a href="https://www.linkedin.com/in/ben-silver-0153802b0/" target="_blank" rel="noopener" class="social-link magnetic-btn linkedin" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/ben-silver-0153802b0/" target="_blank" rel="noopener" class="social-link linkedin" aria-label="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
                 <div class="social-tooltip">LinkedIn</div>
               </a>
-              <a href="https://www.instagram.com/ben.silverr/" target="_blank" rel="noopener" class="social-link magnetic-btn instagram" aria-label="Instagram">
+              <a href="https://www.instagram.com/ben.silverr/" target="_blank" rel="noopener" class="social-link instagram" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
                 <div class="social-tooltip">Instagram</div>
               </a>
-              <a href="https://www.facebook.com/ben.silver.18847876/" target="_blank" rel="noopener" class="social-link magnetic-btn facebook" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=61556614806188" target="_blank" rel="noopener" class="social-link facebook" aria-label="Facebook">
                 <i class="fab fa-facebook-f"></i>
                 <div class="social-tooltip">Facebook</div>
               </a>
             </div>
           </div>
-          <div class="contact-form-wrapper reveal-fade">
-            <form class="contact-form glass-card" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="f3cfd998-36ca-4110-8528-4f5b1f9c8a87">
               <input type="hidden" name="subject" value="New Contact from Portfolio">
               <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -507,18 +441,17 @@
                 <div class="form-line"></div>
               </div>
               
-              <button type="submit" class="submit-btn magnetic-btn">
+              <button type="submit" class="submit-btn">
                 <span>Send Message</span>
                 <i class="fas fa-paper-plane"></i>
-                <div class="btn-glow"></div>
               </button>
               
               <div class="form-status">
-                <div class="success-message glass">
+                <div class="success-message">
                   <i class="fas fa-check-circle"></i>
                   <span>Message sent successfully!</span>
                 </div>
-                <div class="error-message glass">
+                <div class="error-message">
                   <i class="fas fa-exclamation-circle"></i>
                   <span>Oops! Something went wrong.</span>
                 </div>
@@ -531,14 +464,17 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer glass">
+  <footer class="footer">
     <div class="container">
+      <div class="compliance-footer">
+        <p><strong>Professional Disclaimers:</strong> Insurance products offered through WPG The Wealth Planning Group. Licensed in Manitoba. LLQP License Holder. This website is for informational purposes and does not constitute financial or investment advice.</p>
+      </div>
       <div class="footer-content">
         <div class="footer-text">
-          <p>&copy; 2025 Ben Silver. Crafted with passion in Winnipeg.</p>
+          <p>&copy; 2025 Ben Silver. Professional portfolio - Winnipeg, Manitoba.</p>
         </div>
         <div class="footer-links">
-          <button class="back-to-top magnetic-btn" aria-label="Back to top">
+          <button class="back-to-top" aria-label="Back to top">
             <i class="fas fa-arrow-up"></i>
           </button>
         </div>
@@ -546,62 +482,10 @@
     </div>
   </footer>
 
-  <!-- Command Palette -->
-  <div class="command-palette" id="command-palette">
-    <div class="command-content glass-card">
-      <div class="command-header">
-        <input type="text" class="command-input" placeholder="Type a command or search..." id="command-input">
-        <button class="command-close" aria-label="Close command palette">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="command-results">
-        <div class="command-section">
-          <div class="command-label">Navigation</div>
-          <div class="command-item" data-action="navigate" data-target="#hero">
-            <i class="fas fa-home"></i>
-            <span>Go to Home</span>
-            <kbd>1</kbd>
-          </div>
-          <div class="command-item" data-action="navigate" data-target="#about">
-            <i class="fas fa-user"></i>
-            <span>Go to About</span>
-            <kbd>2</kbd>
-          </div>
-          <div class="command-item" data-action="navigate" data-target="#experience">
-            <i class="fas fa-briefcase"></i>
-            <span>Go to Experience</span>
-            <kbd>3</kbd>
-          </div>
-          <div class="command-item" data-action="navigate" data-target="#skills">
-            <i class="fas fa-cogs"></i>
-            <span>Go to Skills</span>
-            <kbd>4</kbd>
-          </div>
-          <div class="command-item" data-action="navigate" data-target="#contact">
-            <i class="fas fa-envelope"></i>
-            <span>Go to Contact</span>
-            <kbd>5</kbd>
-          </div>
-        </div>
-        <div class="command-section">
-          <div class="command-label">Actions</div>
-          <div class="command-item" data-action="effects">
-            <i class="fas fa-magic"></i>
-            <span>Toggle Effects</span>
-            <kbd>E</kbd>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <!-- Scripts -->
   <script src="js/Header-Footer.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/3d-effects.js"></script>
-  <script src="js/interactions.js"></script>
 </body>
 </html>
