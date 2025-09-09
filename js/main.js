@@ -74,7 +74,7 @@ function initTypedText() {
             strings: [
                 'Finance and Accounting Student',
                 'LLQP Licensed',
-                'Event Coordinator at UMMA'
+                'Event Coordinator'
             ],
             typeSpeed: 60,
             backSpeed: 40,
